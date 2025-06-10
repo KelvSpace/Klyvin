@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KelvWare</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="KelvWare" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+              <img src="images/logorw.png" style="width: 80px; height: 80px;" alt="MyCompany Logo">
+            </a>
+          </div>
+          
+        
+        <!-- 🍔 Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <!-- 🌐 Nav Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🎬 Hero Section -->
+    <section class="hero" id="home">
+        <video autoplay muted loop class="bg-video">
+            <source src="videos/bg1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to <span>K</span>elv<span>W</span>are</h1>
+            <p>We Create Exciting Applications For The Future.</p>
+        </div>
+    </section>
+
+    <!-- 👤 About Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="images/logor.png" alt="About Us">
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        We’re a future-driven company focused on building powerful, scalable, and creative tech solutions. 
+        Our mission? To help brands thrive in the digital era with bold innovation and clean code.
+      </p>
+      <p>
+        Whether you're a startup, a growing business, or a big enterprise—if you're dreaming it, we’re building it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 🧰 Services Section -->
+<section class="services" id="services">
+    <div class="services-container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+  
+        <div class="service-card">
+          <img src="images/web-icon.png" alt="Website Development Icon">
+          <h3>Website Development</h3>
+          <p>Custom websites built to be fast, responsive, and visually stunning.</p>
+          <a href="" class="quote-btn" target="_blank">
+            Book
+          </a>
+        </div>
+  
+        <div class="service-card">
+          <img src="images/network-icon.png" alt="Office Network Setup Icon">
+          <h3>Office Network Setup</h3>
+          <p>We design and implement secure, scalable network infrastructures.</p>
+          <a href="" class="quote-btn" target="_blank">
+            Book
+          </a>
+        </div>
+  
+        <div class="service-card">
+          <img src="images/design-icon.png" alt="Graphic Design Icon">
+          <h3>Graphic Design</h3>
+          <p>Creative visuals, logos, branding kits, and social media assets that pop.</p>
+          <a href="" class="quote-btn" target="_blank">
+            Book
+          </a>
+        </div>
+  
+        <div class="service-card">
+          <img src="images/software-icon.png" alt="Software Development Icon">
+          <h3>Software Development</h3>
+          <p>From desktop to cloud solutions, we build robust custom software tailored to your needs.</p>
+          <a href="" class="quote-btn" target="_blank">
+            Book
+          </a>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌟 Quote Modal -->
+<div id="quoteModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Request a Quote</h2>
+    <form id="quoteForm">
+      <label for="name">Full Name*</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" required>
+    
+      <label for="email">Email (Optional)</label>
+      <input type="email" id="email" name="email">
+    
+      <label for="service">Select Service*</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select One --</option>
+        <option value="Website Development">Website Development</option>
+        <option value="Office Network Setup">Office Network Setup</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Software Development">Software Development</option>
+      </select>
+    
+      <label for="details">Project Description (Optional)</label>
+      <textarea id="details" name="details" rows="4" placeholder="Tell us more about what you need..."></textarea><br>
+    
+      <button type="submit" class="submit-btn">Submit via WhatsApp</button>
+    </form>    
+  </div>
+</div>
+
+  
+
+  <!-- 💸 Pricing Section -->
+<section class="pricing" id="pricing">
+  <div class="pricing-container">
+    <h2>Pricing</h2>
+
+    <!-- 🧭 Category Tabs -->
+    <div class="pricing-tabs">
+      <button class="tab active" data-tab="web">Website Dev</button>
+      <button class="tab" data-tab="network">Networking</button>
+      <button class="tab" data-tab="design">Graphic Design</button>
+      <button class="tab" data-tab="software">Software Dev</button>
+    </div>
+
+    <!-- 🧱 Pricing Cards -->
+    <div class="pricing-content active" id="web">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Basic Website</h3>
+          <p class="price">$150</p>
+          <ul>
+            <li>1 to 3 Page</li>
+            <li>Responsive Design</li>
+            <li>Contact Form</li>
+          </ul>
+          <a href="https://wa.me/p/24111809901740579/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Standard Website</h3>
+          <p class="price">$400</p>
+          <ul>
+            <li>Up to 5 Pages</li>
+            <li>SEO Friendly</li>
+            <li>Fast Hosting</li>
+          </ul>
+          <a href="https://wa.me/p/9935725436479423/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Premium Website</h3>
+          <p class="price">$800 +</p>
+          <ul>
+            <li>10+ Pages</li>
+            <li>E-Commerce</li>
+            <li>Custom Admin Panel</li>
+          </ul>
+          <a href="https://wa.me/p/29717031804554520/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="pricing-content" id="network">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Home/office setup (router config, cabling, security)</h3>
+          <p class="price">$150 - $300</p>
+          <ul>
+            <li>Devices Installation</li>
+            <li>Router Setup</li>
+            <li>Basic Cabling</li>
+          </ul>
+          <a href="https://wa.me/p/9622877744467008/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+    
+        <div class="pricing-card">
+          <h3>Network Troubleshooting</h3>
+          <p class="price">$70</p>
+          <ul>
+            <li>Up to 10 Devices</li>
+            <li>Router + Switch Setup</li>
+            <li>LAN + Wi-Fi Coverage</li>
+          </ul>
+          <a href="https://wa.me/p/9826934400706785/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+    
+        <div class="pricing-card">
+          <h3>Network IT support </h3>
+          <p class="price">$50 - $150</p>
+          <ul>
+            <li>20+ Devices</li>
+            <li>Firewall & Security</li>
+            <li>Professional Cabling & Config</li>
+          </ul>
+          <a href="https://wa.me/p/9596205740448351/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="pricing-content" id="design">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Logo Design</h3>
+          <p class="price">$30–$70</p>
+          <ul>
+            <li>3 Concepts</li>
+            <li>Unlimited Revisions</li>
+            <li>Source Files Included</li>
+          </ul>
+          <a href="https://wa.me/p/9854478994595059/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+    
+        <div class="pricing-card">
+          <h3>Brand Kit</h3>
+          <p class="price">$150–$300</p>
+          <ul>
+            <li>Logo + Colors + Fonts</li>
+            <li>Social Media Templates</li>
+            <li>Print-Ready Files</li>
+          </ul>
+          <a href="https://wa.me/p/9707349905993597/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+    
+        <div class="pricing-card">
+          <h3>Social Media Posting</h3>
+          <p class="price">1500–$300</p>
+          <ul>
+            <li>15 Custom Designs</li>
+            <li>Instagram/Facebook Sizes</li>
+            <li>Quick Turnaround</li>
+          </ul>
+          <a href="https://wa.me/p/9821205014568624/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-content" id="software">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Mini App</h3>
+          <p class="price">$100–$250</p>
+          <ul>
+            <li>Basic Features</li>
+            <li>1 Platform (Web/Desktop)</li>
+            <li>3 Weeks Delivery</li>
+          </ul>
+          <a href="https://wa.me/p/23875389605386309/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+    
+        <div class="pricing-card">
+          <h3>Business App</h3>
+          <p class="price">$200–$500</p>
+          <ul>
+            <li>Login System</li>
+            <li>Database Integration</li>
+            <li>Admin Panel</li>
+          </ul>
+          <a href="https://wa.me/p/8297256443732826/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+    
+        <div class="pricing-card">
+          <h3>Bug fixes or code review</h3>
+          <p class="price">$50-$100 Per week</p>
+          <ul>
+            <li>Multi-user Roles</li>
+            <li>APIs / Payment Gateways</li>
+            <li>Fully Custom Solution</li>
+          </ul>
+          <a href="https://wa.me/p/9556148931100402/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Repeat for other categories (network, design, software) -->
+  </div>
+</section>
+
+
+  <!--
+  <section id="contact" class="contact-section">
+    <div class="contact-card">
+      <h2>Get in Touch</h2>
+      <p>Have a question or just want to say hi? We’d love to hear from you.</p>
+  
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+  
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="social-icon twitter" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  -->
+  <!-- Footer -->
+<!-- 🔻 Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/logorw.png" alt="Company Logo" />
+      <p>Creating Exciting Applications For The Future..</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-socials">
+      <h4>Connect With Us</h4>
+      <div class="social-icons">
+        <a href="https://wa.me/233502224249" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/kelvware" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 KelvWare. CEO Kelvin Nii Amu Okai.</p>
+  </div>
+</footer>
+
+  
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn" title="Back to top">&#8679;</button>
+
+</body>
+<script src="js/script.js"></script>
+</html>
