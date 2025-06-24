@@ -33,42 +33,31 @@
 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">
-              <img src="images/klyvin_logo_transparent.png" style="width: 80px; height: 80px;" alt="MyCompany Logo">
-            </a>
-          </div>
-          
-        
-        <!-- 🍔 Hamburger Icon -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      
-        <!-- 🌐 Nav Links -->
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-        </ul>
-    </nav>
+    <nav>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div class="logo"><img src="images/logor.png" alt="logo" width="110px" height="100px"></div>
 
-    <!-- 🎬 Hero Section -->
-    <section class="hero" id="home">
-        <video autoplay muted loop class="bg-video">
-            <source src="videos/bg.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-        </video>
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Welcome to <span>K</span>lyvin</h1>
-            <p>We Create Exciting Applications For The Future.</p>
+    <div class="nav-center" id="navCenter">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#pricing" class="nav-link">Prices</a>
+    </div>
+
+    <div class="nav-right" id="navRight">
+      <a href="#" class="nav-link">Book Us</a>
+    </div>
+  </nav>
+
+
+    <div class="hero">
+        <div class="content">
+            <h2>Welcome to Klyvin</h2>
+            <p>Your one-stop solution for all your needs.</p>
+
+            <a href="#" class="btn">Get Started</a>
         </div>
-    </section>
+    </div>
 
     <!-- 👤 About Section -->
 <section class="about" id="about">
