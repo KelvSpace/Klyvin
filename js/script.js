@@ -1,10 +1,12 @@
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+const navCenter = document.getElementById('navCenter');
+const navRight = document.getElementById('navRight');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('open');
+  navCenter.classList.toggle('show');
+  navRight.classList.toggle('show');
 });
+
 
 
   const scrollBtn = document.getElementById("scrollToTopBtn");
@@ -89,7 +91,7 @@ Phone: ${phone}
 ${email ? "Email: " + email : ""}`;
 
     const encodedMessage = encodeURIComponent(baseMessage);
-    const whatsappNumber = "233502224249"; // 🔁 replace with your real number
+    const whatsappNumber = "233539416658"; // 🔁 replace with your real number
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
     window.open(whatsappURL, "_blank");
