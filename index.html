@@ -12,16 +12,14 @@
     <meta name="apple-mobile-web-app-title" content="klyvin" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- ✅ Meta Description -->
+    
   <meta name="description" content="Klyvin is a software engineering brand building smart systems and scalable IT solutions for modern businesses.">
 
-  <!-- ✅ Google Site Verification (Replace this content with your actual code from Search Console) -->
   <meta name="google-site-verification" content="REPLACE_WITH_YOUR_VERIFICATION_CODE">
 
-  <!-- ✅ Open Graph Tags (for link previews on social) -->
   <meta property="og:title" content="Klyvin | Smart Software. Scalable Systems.">
   <meta property="og:description" content="We engineer intelligent, scalable IT solutions for startups and enterprises.">
-  <meta property="og:image" content="https://klyvin.com/assets/klyvin-preview.png"> <!-- Optional preview image URL -->
+  <meta property="og:image" content="https://klyvin.com/images/logo.png"> 
   <meta property="og:url" content="https://klyvin.com">
   <meta property="og:type" content="website">
 
@@ -32,7 +30,7 @@
 </head>
 <body>
     <nav>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <button id="hamburger" class="hamburger" onclick="toggleMenu()">☰</button>
     <div class="logo"><img src="images/logor.png" alt="logo" width="110px" height="100px"></div>
 
     <div class="nav-center" id="navCenter">
@@ -43,7 +41,7 @@
     </div>
 
     <div class="nav-right" id="navRight">
-      <a href="#" class="nav-link">Book Us</a>
+      <a href="#" class="nav-link quote-btn" target="_blank">Book Us</a>
     </div>
   </nav>
 
@@ -53,7 +51,7 @@
             <h2>Welcome to Klyvin</h2>
             <p>Your one-stop solution for all your needs.</p>
 
-            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="btn quote-btn" target="_blank">Get Started</a>
         </div>
     </div>
 
@@ -91,6 +89,7 @@
           </a>
         </div>
   
+        <!---
         <div class="service-card">
           <img src="images/network-icon.png" alt="Office Network Setup Icon">
           <h3>Office Network Setup</h3>
@@ -99,7 +98,8 @@
             Book
           </a>
         </div>
-  
+        -->
+
         <div class="service-card">
           <img src="images/design-icon.png" alt="Graphic Design Icon">
           <h3>Graphic Design</h3>
@@ -140,7 +140,6 @@
       <select id="service" name="service" required>
         <option value="">-- Select One --</option>
         <option value="Website Development">Website Development</option>
-        <option value="Office Network Setup">Office Network Setup</option>
         <option value="Graphic Design">Graphic Design</option>
         <option value="Software Development">Software Development</option>
       </select>
@@ -163,7 +162,6 @@
     <!-- 🧭 Category Tabs -->
     <div class="pricing-tabs">
       <button class="tab active" data-tab="web">Website Dev</button>
-      <button class="tab" data-tab="network">Networking</button>
       <button class="tab" data-tab="design">Graphic Design</button>
       <button class="tab" data-tab="software">Software Dev</button>
     </div>
@@ -175,18 +173,18 @@
           <h3>Basic Website</h3>
           <p class="price">$150</p>
           <ul>
-            <li>1 to 3 Page</li>
+            <li>1 Page</li>
             <li>Responsive Design</li>
             <li>Contact Form</li>
           </ul>
-          <a href="https://wa.me/p/24111809901740579/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+          <a href="https://wa.me/p/9825635944224991/233539416658" class="quote-btn1" target="_blank">Get Started</a>
         </div>
 
         <div class="pricing-card">
           <h3>Standard Website</h3>
           <p class="price">$400</p>
           <ul>
-            <li>Up to 5 Pages</li>
+            <li>2 to 5 Pages</li>
             <li>SEO Friendly</li>
             <li>Fast Hosting</li>
           </ul>
@@ -201,12 +199,12 @@
             <li>E-Commerce</li>
             <li>Custom Admin Panel</li>
           </ul>
-          <a href="https://wa.me/p/29717031804554520/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+          <a href="https://wa.me/p/10029328770456171/233539416658" class="quote-btn1" target="_blank">Get Started</a>
         </div>
       </div>
     </div>
 
-
+<!--
     <div class="pricing-content" id="network">
       <div class="pricing-grid">
         <div class="pricing-card">
@@ -243,7 +241,7 @@
         </div>
       </div>
     </div>
-
+-->
     
     <div class="pricing-content" id="design">
       <div class="pricing-grid">
@@ -255,7 +253,7 @@
             <li>Unlimited Revisions</li>
             <li>Source Files Included</li>
           </ul>
-          <a href="https://wa.me/p/9854478994595059/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+          <a href="https://wa.me/p/10067174053331168/233539416658" class="quote-btn1" target="_blank">Get Started</a>
         </div>
     
         <div class="pricing-card">
@@ -266,18 +264,18 @@
             <li>Social Media Templates</li>
             <li>Print-Ready Files</li>
           </ul>
-          <a href="https://wa.me/p/9707349905993597/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+          <a href="https://wa.me/p/24420375657570401/233539416658" class="quote-btn1" target="_blank">Get Started</a>
         </div>
     
         <div class="pricing-card">
-          <h3>Social Media Posting</h3>
-          <p class="price">1500–$300</p>
+          <h3>Social Media Management</h3>
+          <p class="price">$150 - $300</p>
           <ul>
             <li>15 Custom Designs</li>
-            <li>Instagram/Facebook Sizes</li>
+            <li>Instagram/Facebook</li>
             <li>Quick Turnaround</li>
           </ul>
-          <a href="https://wa.me/p/9821205014568624/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+          <a href="https://wa.me/p/23895035950164192/233539416658" class="quote-btn1" target="_blank">Get Started</a>
         </div>
       </div>
     </div>
@@ -285,33 +283,33 @@
     <div class="pricing-content" id="software">
       <div class="pricing-grid">
         <div class="pricing-card">
-          <h3>Mini App</h3>
-          <p class="price">$100–$250</p>
+          <h3>Mobile App</h3>
+          <p class="price">$500–$1000</p>
           <ul>
             <li>Basic Features</li>
-            <li>1 Platform (Web/Desktop)</li>
+            <li>1 Platform (Android/iOS)</li>
             <li>3 Weeks Delivery</li>
           </ul>
-          <a href="https://wa.me/p/23875389605386309/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+          <a href="https://wa.me/p/10048326135243578/233539416658" class="quote-btn1" target="_blank">Get Started</a>
         </div>
     
         <div class="pricing-card">
-          <h3>Business App</h3>
-          <p class="price">$200–$500</p>
+          <h3>Desktop Applications</h3>
+          <p class="price">$500–$1500</p>
           <ul>
             <li>Login System</li>
             <li>Database Integration</li>
             <li>Admin Panel</li>
           </ul>
-          <a href="https://wa.me/p/8297256443732826/233502224249" class="quote-btn1" target="_blank">Get Started</a>
+          <a href="https://wa.me/p/23969721016012167/233539416658" class="quote-btn1" target="_blank">Get Started</a>
         </div>
     
         <div class="pricing-card">
-          <h3>Bug fixes or code review</h3>
-          <p class="price">$50-$100 Per week</p>
+          <h3>Bug fixes & code review</h3>
+          <p class="price">$10-$50 </p>
           <ul>
             <li>Multi-user Roles</li>
-            <li>APIs / Payment Gateways</li>
+            <li>APIs & Payment Gateways</li>
             <li>Fully Custom Solution</li>
           </ul>
           <a href="https://wa.me/p/9556148931100402/233502224249" class="quote-btn1" target="_blank">Get Started</a>
